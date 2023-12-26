@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
+
+  <!-- Those 5 meta tags for OG!-->
+  <meta property="og:title" content="Fahmin | Developer" />
+  <meta name="image" property="og:image"
+    content="https://res.cloudinary.com/faxmishok/image/upload/v1617770415/og.png" />
+  <meta name="author" content="Fahmin Guliyev" />
+  <meta property="og:description" content="Portfolio Website" />
+  <meta property="og:url" content="https://fahminguliyev.live" />
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="fahminguliyev.live">
+  <meta property="twitter:url" content="https://fahminguliyev.live">
+  <meta name="twitter:title" content="Fahmin | Developer">
+  <meta name="twitter:description" content="Portfolio Website">
+  <meta name="twitter:image" content="https://res.cloudinary.com/faxmishok/image/upload/v1617770415/og.png">
+
+  <!-- Put here your site title -->
+  <title>Fahmin | Developer</title>
+  <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
+  <meta name="keywords" content="faxmishok, javascript, node, mern, app, developer" />
+  <!-- Improve your SEO by adding a small descrption of you -->
+  <meta name="description" content="Fahmin | Developer" />
+
+  <!-- Required librarys -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: false });
+  </script>
+
+  <!-- Remove this script once you setup your custom portfolio -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+
+<!-- Follow the HTML instructions to create your stunning portfolio website -->
+
+<body>
+  <div id="top"></div>
+
+  <!-- **** Hero Section **** -->
+  <div id="hero" class="jumbotron">
+    <div class="container">
+      <h1 class="hero-title" class="load-hidden">
+        Hello, my name is <span class="text-color-main">Fahmin</span>
+        <br />
+        I am <span id="typed-element"></span>
+      </h1>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+      <script>
+        var typed = new Typed('#typed-element', {
+          strings: ['a developer.', 'a student.', 'a designer.', 'a researcher.', 'an engineer.'],
+          typeSpeed: 40,
+          backSpeed: 40,
+          backDelay: 700, // yazi yazilib bitenden sonra nece ms gozdesin silmek ucun
+          smartBackspace: true, //bilirsen
+          loop: true, //loopda saxliyir
+          loopCount: Infinity,
+          fadeOut: false, //bosh sohbetdi
+          showCursor: true, //kursoru gorset
+          cursorChar: '|', // kursor xususi ishare
+          autoInsertCss: true, //kursor yanib sonur
+        });
+      </script>
+      <p class="hero-cta" class="load-hidden">
+        <a class="cta-btn cta-btn--hero" href="#about">Read more</a>
+      </p>
+    </div>
+  </div>
+  <!-- /END Hero Section -->
+
+  <!-- **** About Section **** -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About me</h2>
+      <div class="row about-wrapper">
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__image">
+            <img class="img-fluid rounded shadow-lg" height="auto" width="300px" src="./assets/profile.png"
+              alt="Profile Image" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12 d-flex align-items-center">
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              My name is Fahmin Guliyev and I am currently pursuing my Master's degree at Politecnico di Milano majoring
+              in Computer Science & Engineering.
+            </p>
+            <p class="about-wrapper__info-text">
+              Basically I am a computer science student and cybersecurity enthusiast who is heavily keen on software
+              development and always open to learn new things. I have created this portfolio website to showcase some of
+              my top projects that I developed during my Bachelor years.
+            </p>
+            <p class="about-wrapper__info-text">
+              I am skilled in number of programming languages, namely, C, C++, Java, (also some scripting languages)
+              Python, JavaScript, Go. I develop web applications as hobby in my spare time using latest web technologies
+              available.
+            </p>
+            <span class="d-flex mt-3">
+              <a target="_blank" class="cta-btn cta-btn--resume" href="">
+                Resume
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /END About Section -->
+
+  <!-- **** Projects Section **** -->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">Projects</h2>
+
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 d-flex align-items-center">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">GIS Web Platform</h3>
+              <div>
+                <p class="mb-4">
+                  This interactive GIS web platform was developed as part of my internship project at
+                  the final year of my Bachelor's. It displays base OpenStreetMaps including several map projections
+                  and interactive drawing features, as well as an export function.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://fahminguliyev.live/gis">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/faxmishok/gis">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://fahminguliyev.live/gis" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/gis.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 d-flex align-items-center">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">O-Sci-Lator</h3>
+              <div>
+                <p class="mb-4">
+                  O-Sci-Lator is an OCR powered Scientific Calculator application that developed to help professors and
+                  students to train with real-time math renderer and even automate calculations with image to math
+                  converter.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="http://o-sci-lator.me">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/faxmishok/o-sci-lator">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="http://o-sci-lator.me" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/o-sci-lator.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 d-flex align-items-center">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">SecUrZone &ndash; Bug Bounty</h3>
+              <div>
+                <p class="mb-4">
+                  SecUrZone is an intended bug bounty platform of Azerbaijan.
+                </p>
+                <p class="mb-4">
+                  A ​ bug bounty program​ is a deal offered by many websites, organizations and software developers by
+                  which individuals can receive recognition and compensation​ for reporting ​ bugs​ , especially those
+                  pertaining to security ​ exploits​ and ​ vulnerabilities​.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://securzone3.web.app">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/faxmishok/bug-bounty">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://securzone3.web.app" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/securzone.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 d-flex align-items-center">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Conway's Game of Life</h3>
+              <div>
+                <p class="mb-4">
+                  The Game of Life is an example of a cellular automaton and a zero-player game. It takes place on an
+                  infinite two-dimensional grid in which cells can be ‘on’ (alive) or ‘off’ (dead), and is defined by a
+                  set of rules that jointly determine the state of a cell given the state of its neighbours. Our
+                  implementation of the game is based on C language. Below you can find the generated website with
+                  doxygen.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://fahminguliyev.live/game-of-life">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/faxmishok/Dev_Techniques_game-of-life">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://fahminguliyev.live/game-of-life" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/game-of-life.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 d-flex align-items-center">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Love Letter Board Game</h3>
+              <div>
+                <p class="mb-4">
+                  Love Letter is a game of risk, deduction, and luck for 2 – 4 players. Your goal is to get your love
+                  letter into Princess Annette's hands while deflecting the letters from competing suitors. On a turn,
+                  you draw one card, and play one card, trying to expose others and knock them from the game. Powerful
+                  cards lead to early gains, but make you a target. Rely on weaker cards for too long, however, and your
+                  letter may be tossed in the fire!
+                </p>
+              </div>
+              <a class="cta-btn cta-btn--hero" href="#!">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/faxmishok/love-letter-mernapp">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="#!" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/love-letter.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 d-flex align-items-center">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Transaction Controller</h3>
+              <div>
+                <p class="mb-4">
+                  This project is designed and developed as the final project of Web 2 - PHP Course taught in the
+                  university. It is simply a budget transaction controller app developed in LAMP stack with the server
+                  deployed in the remote AlwaysData server.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://faxmishok.alwaysdata.net/welcome.html">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/faxmishok/WEB2_Project_Transaction_control">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://faxmishok.alwaysdata.net/welcome.html" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/transaction_controller.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 d-flex align-items-center">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">Villa Fiori &ndash; Hotel Website</h3>
+              <div>
+                <p class="mb-4">
+                  Villa Fiori is a hotel website developed for a certain university subject under educational purposes.
+                  The website just serves to be an informative one rather than a typical online booking web application.
+                  Technologies during the development process of this particular project include basic HTML, CSS,
+                  Bootstrap and lastly a bit of JavaScript.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://villafiorihotel.live">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/tilfrancess/tilfrancess.github.io">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://villafiorihotel.live" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/hotel.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+      </div>
+    </div>
+  </section>
+  <!-- /END Projects Section -->
+
+  <!-- **** Contact Section **** -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">Would you like to work with me? Awesome!
+        </p>
+        <a target="_blank" class="cta-btn cta-btn--resume" href="mailto:fahmin.guliyev@mail.polimi.it">Let's Talk</a>
+      </div>
+    </div>
+  </section>
+  <!-- /END Contact Section -->
+
+  <!-- **** Footer Section **** -->
+  <footer class="footer navbar-static-bottom">
+    <div class="container">
+      <a href="#top" class="back-to-top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a href="https://twitter.com/faxmishok" target="_blank">
+          <i class="fa fa-twitter fa-inverse"></i>
+        </a>
+        <a href="https://codepen.io/faxmishok" target="_blank">
+          <i class="fa fa-codepen fa-inverse"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/fahmin/" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
+        </a>
+        <a href="https://github.com/faxmishok" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
+      </div>
+
+      <hr />
+
+      <!-- If you give me some credit, will be huge for me :) -->
+      <p class="footer__text">
+        &copy;
+        <span id="copyright">
+          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+        </span>
+        <a href="https://github.com/faxmishok" target="_blank">Fahmin Guliyev</a>
+      </p>
+
+      <!-- Remove this paragraph once you setup your custom portfolio -->
+      <!-- <p class="mt-3 pt-3">
+        <a class="github-button" href="https://github.com/cobidev/simplefolio/fork" data-icon="octicon-repo-forked"
+          data-size="large" data-show-count="true" aria-label="Fork ntkme/github-buttons on GitHub">Fork</a>
+        <a class="github-button" href="https://github.com/cobidev/simplefolio" data-icon="octicon-star"
+          data-size="large" data-show-count="true" aria-label="Star cobidev/simplefolio on GitHub">Star</a>
+      </p> -->
+
+
+    </div>
+  </footer>
+  <!-- /END Footer Section -->
+</body>
+
+</html>
